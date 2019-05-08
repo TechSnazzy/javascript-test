@@ -1,9 +1,10 @@
 var car = {
-  color: 'red',
-  speed: 200,
-  drive: function() {
-    return 'drive';
+  make: 'Volvo',
+  speed: 160,
+  engine: {
+    size: 2.0,
+    make: 'BMW',
+    fuel: 'petrol',
+    pistons: [{ maker: 'BMW' }, { maker: 'BMW' }]
   }
 };
-
-var shoppingList = ['Apple', 'Orange', 'Pear'];
