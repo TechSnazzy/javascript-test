@@ -1,10 +1,25 @@
 var car = {
-  make: 'Volvo',
+  make: 'volvo',
   speed: 160,
   engine: {
     size: 2.0,
-    make: 'BMW',
+    make: 'bmw',
     fuel: 'petrol',
-    pistons: [{ maker: 'BMW' }, { maker: 'BMW' }]
+    pistons: [{ maker: 'bmw' }, { maker: 'bmw' }]
+  },
+  drive: function() {
+    return 'drive';
   }
 };
+
+var array = [
+  'string',
+  100,
+  ['embed', 200],
+  {
+    car: 'ford'
+  },
+  function() {
+    return 'drive';
+  }
+];
