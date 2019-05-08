@@ -1,17 +1,9 @@
-function makeCoffee(sugar, milk) {
-  var instructions = 'Boil water,';
+var car = {
+  color: 'red',
+  speed: 200,
+  drive: function() {
+    return 'drive';
+  }
+};
 
-  instructions += ' pour into cup,';
-
-  instructions += ' add coffee,';
-
-  instructions += ' add ' + sugar + ' spoons of sugar,';
-
-  instructions += ' add ' + milk + ' spoons of milk,';
-
-  instructions += ' enjoy!';
-
-  return instructions;
-}
-
-console.log(makeCoffee(4, 3));
+var shoppingList = ['Apple', 'Orange', 'Pear'];
