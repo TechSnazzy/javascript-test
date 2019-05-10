@@ -9,6 +9,17 @@ let code = {
   }
 };
 
+// add a new key to the code object
+code.hello = 'hello';
+
+// add a new method to the code object
+code.todont = function() {
+  return 'I do not know!';
+};
+
+// delete the property
+delete code.todont;
+
 let fruit = [
   'Apple',
   'Orange',
