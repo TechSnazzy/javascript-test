@@ -1,35 +1,19 @@
-let code = {
-  noun: 'HTML',
-  adjective: 'CSS',
-  verb: function() {
-    return 'JavaScript';
-  },
-  todo: function(days) {
-    return days;
-  }
-};
+let arr = ['Sean', 'Stephanie', 'Macy', 'Milo'];
 
-// add a new key to the code object
-code.hello = 'hello';
+// Remove Sean
+arr.shift();
 
-// add a new method to the code object
-code.todont = function() {
-  return 'I do not know!';
-};
+// Remove Milo
+arr.pop();
 
-// delete the property
-delete code.todont;
+// Add Sean back
+arr.unshift('Sean');
 
-let fruit = [
-  'Apple',
-  'Orange',
-  function() {
-    return 'Banana';
-  }
-];
+// Add Milo back
+arr.push('Milo');
 
-console.log(
-  '#' + code.todo(100) + 'DaysOfCode:' + ' Continue learning ' + code.verb()
-);
+// Insert Baby Morrison in the middle
+// (position, how many to delete, item to add)
+arr.splice(2, 0, 'Baby Morrison');
 
-console.log(`I have an ${fruit[0]} and a ${fruit[1]} and a ${fruit[2]()}.`);
+console.log(arr);
