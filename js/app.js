@@ -3,11 +3,11 @@ function name() {
   let space = ' ';
   let lastName = 'Morrison';
 
-  function isCool(word) {
+  function isAwesome(word) {
     return word;
   }
 
-  return isCool(firstName + space + lastName + ' is cool');
+  return isAwesome(firstName + space + lastName + ' is awesome!');
 }
 
 console.log(name());
