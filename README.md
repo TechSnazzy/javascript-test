@@ -15,3 +15,11 @@ git log --oneline --graph --all
 ```
 git checkout 707a9b2
 ```
+
+If you do a `git status` and you get something like `HEAD detached from bb1e955` then just do this...
+
+```
+git branch my-temporary-work
+git checkout master
+git merge my-temporary-work
+```
