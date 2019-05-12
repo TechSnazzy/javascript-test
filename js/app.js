@@ -1,19 +1,13 @@
-let arr = ['Sean', 'Stephanie', 'Macy', 'Milo'];
+function name() {
+  let firstName = 'Sean';
+  let space = ' ';
+  let lastName = 'Morrison';
 
-// Remove Sean
-arr.shift();
+  function isCool(word) {
+    return word;
+  }
 
-// Remove Milo
-arr.pop();
+  return isCool(firstName + space + lastName + ' is cool');
+}
 
-// Add Sean back
-arr.unshift('Sean');
-
-// Add Milo back
-arr.push('Milo');
-
-// Insert Baby Morrison in the middle
-// (position, how many to delete, item to add)
-arr.splice(2, 0, 'Baby Morrison');
-
-console.log(arr);
+console.log(name());
