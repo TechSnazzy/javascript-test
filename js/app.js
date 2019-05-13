@@ -1,13 +1,17 @@
-function name() {
-  let firstName = 'Sean';
-  let space = ' ';
-  let lastName = 'Morrison';
-
-  function isAwesome(word) {
-    return word;
-  }
-
-  return isAwesome(firstName + space + lastName + ' is awesome!');
+function name(fullname) {
+  return fullname();
 }
 
-console.log(name());
+console.log(
+  name(function() {
+    return 'embed';
+  })
+);
+
+/*
+1. Invoke the function name which is a callable object.
+2. This callable object receives argument and assigns it to fullname.
+3. Then we return fullname.
+
+So we are literally returning a callable object.
+*/
