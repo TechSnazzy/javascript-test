@@ -1,17 +1,11 @@
-function name(fullname) {
-  return fullname();
-}
+let a = function a() {
+  return 'AAA';
+};
 
-console.log(
-  name(function() {
-    return 'embed';
-  })
-);
+let b = function b() {
+  return 'BBB';
+};
 
-/*
-1. Invoke the function name which is a callable object.
-2. This callable object receives argument and assigns it to fullname.
-3. Then we return fullname.
+console.log(a(), b(), c);
 
-So we are literally returning a callable object.
-*/
+var c = 'CCC';
