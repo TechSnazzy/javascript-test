@@ -9,3 +9,8 @@ function runExpression() {
 }
 
 console.log(runExpression());
+
+/*
+1. Functions are callable objects.
+2. Callable objects have scope.
+*/
