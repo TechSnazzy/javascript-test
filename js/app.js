@@ -1,11 +1,11 @@
-let a = function a() {
-  return 'AAA';
-};
+function runExpression() {
+  var a = 10;
 
-let b = function b() {
-  return 'BBB';
-};
+  function add(b) {
+    return a + b;
+  }
 
-console.log(a(), b(), c);
+  console.log(add(90), add(20));
+}
 
-var c = 'CCC';
+console.log(runExpression());
