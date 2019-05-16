@@ -1,16 +1,17 @@
+var engine = {
+  type: 'Chevy',
+  color: 'Red'
+};
+
 function runExpression() {
   var a = 10;
 
-  function add(b) {
-    return a + b;
+  function add() {
+    var engine = 'String engine';
+    console.log(engine);
   }
 
-  console.log(add(90), add(20));
+  add();
 }
 
 console.log(runExpression());
-
-/*
-1. Functions are callable objects.
-2. Callable objects have scope.
-*/
