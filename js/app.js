@@ -1,25 +1,14 @@
-/*
-This is how 'this' keyword works.
-1. Create a person object.
-2. Add a firstName and lastName property.
-3. Add a getFullName method which returns the person first and last name.
-4. Now call the person's full name and assign it to a variable.
-5. Print the fullName variable to the console.
-6. Create a new person2 variable and assign it to person. Notice how it returns undefined to the console.
-8. Change person.firstName to this.firstName so that the object symbol no longer matters.
-*/
+function Apple(x, y, color, score) {
+  this.x = x;
+  this.y = y;
+  this.color = color;
+  this.score = score;
+}
 
-let person = {
-  firstName: 'Sean',
-  lastName: 'Morrison',
-  getFullName: function() {
-    return this.firstName + ' ' + this.lastName;
-  }
-};
+let apple1 = new Apple(10, 20, 'Red', 200);
+let apple2 = new Apple(100, 200, 'Green', 50);
+let apple3 = new Apple(20, 200, 'Pink', 10);
 
-let fullName = person.getFullName();
-
-let person2 = person;
-person = {};
-
-console.log(fullName);
+console.log(apple1);
+console.log(apple2);
+console.log(apple3);
