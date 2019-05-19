@@ -2,7 +2,26 @@
 
 This is just a test site for practing JS basics.
 
-Notes:
+---
+# What have I learned so far?
+- Console
+- Objects
+- Syntax
+- Primitive Data
+- Variables and Operators
+- Functions and Subroutines
+- Objects and Arrays
+- Member Access
+- Array Modification
+- Callable Objects
+- Memory Hoisting
+- Scope & Closures
+- This
+- Constructors
+
+---
+
+# Git Notes
 
 - View git history.
 
