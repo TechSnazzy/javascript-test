@@ -1,35 +1,24 @@
-/*
-What is happening here?
-1. Create a new Apple constructor object.
-2. Create a new Apple prototype object.
-3. Create new apple1, apple2, apple3 objects.
-4. Print results to the console.
-*/
-
-function Apple(color, weight) {
+function Cat(color, gender) {
   this.color = color;
-  this.weight = weight;
+  this.gender = gender;
 }
 
-Apple.prototype = {
-  eat: function() {
-    return 'eat the apple';
+Cat.prototype = {
+  sleep: function() {
+    return 'sleeping';
   },
-  throw: function() {
-    return 'throw the apple';
+  dream: function() {
+    return 'dreaming';
   }
 };
 
-let apple1 = new Apple('red', 99);
-let apple2 = new Apple('green', 109);
-let apple3 = new Apple('yellow', 299);
+let macy = new Cat('gray and white', 'female');
+let milo = new Cat('black and white', 'male');
 
 console.log(
-  'My apple is ' +
-    apple1.color +
-    ' and weighs ' +
-    apple1.weight +
-    ' ounces and I will ' +
-    apple1.eat() +
-    '.'
+  'I am a ' + macy.color + ', ' + macy.gender + ' and I am ' + macy.sleep()
+);
+
+console.log(
+  'I am a ' + milo.color + ', ' + milo.gender + ' and I am ' + milo.dream()
 );
