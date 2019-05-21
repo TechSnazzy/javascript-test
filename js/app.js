@@ -1,19 +1,9 @@
-let classRegister = ['Lawrence', 'John', 'Jeff'];
+var xHello = document.getElementById('hello');
 
-// Increment
+xHello.innerHTML += ',<span style="color: red;"> Hello World</span>';
 
-for (let i = 0; i < classRegister.length; i++) {
-  console.log(classRegister[i]);
-}
+xHello.outerHTML += '<h2>OUTER HTML</h2>';
 
-// Decrement
+var yHello = document.querySelectorAll('li')[0];
 
-for (let i = classRegister.length - 1; i >= 0; i--) {
-  console.log(classRegister[i]);
-}
-
-// The for...in loop
-
-for (var index in classRegister) {
-  console.log(classRegister[index]);
-}
+yHello.innerHTML = 'WHAT?';
