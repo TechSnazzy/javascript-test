@@ -1,4 +1,13 @@
-/* body {
+body {
   background-color: #303030;
   color: white;
-} */
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: stretch;
+}
