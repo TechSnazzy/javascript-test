@@ -1,9 +1,12 @@
-var xHello = document.getElementById('hello');
+var el = document.getElementById('style');
+var body = document.getElementById('main-body');
 
-xHello.innerHTML += ',<span style="color: red;"> Hello World</span>';
+el.style.background = 'blue';
+el.style.color = 'white';
+el.style.width = '200px';
 
-xHello.outerHTML += '<h2>OUTER HTML</h2>';
+el.style.cssText = ' background:blue; width:200px ';
+el.style.cssText += ' height: 100px; ';
+body.style.cssText = ' background:#303030; color:white; ';
 
-var yHello = document.querySelectorAll('li')[0];
-
-yHello.innerHTML = 'WHAT?';
+// console.log(getComputedStyle(el));
