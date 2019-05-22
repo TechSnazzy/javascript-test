@@ -7,6 +7,6 @@ h1.style.cssText =
 h2.style.cssText =
   ' background:#202020; width:80%; height: 100px; text-align:center; ';
 
-button.onclick = function() {
-  console.log('Hello');
+button.onclick = function(e) {
+  console.log(e);
 };
