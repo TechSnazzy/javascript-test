@@ -7,11 +7,7 @@ h1.style.cssText =
 h2.style.cssText =
   ' background:#202020; width:80%; height: 100px; text-align:center; ';
 
-// button.onclick = function(e) {
-//   console.log(e);
-// };
-
 button.addEventListener('click', function(e) {
-  button.style.background = 'orangered';
+  button.style.cssText = 'background:orangered;';
   button.textContent = 'OrangeRed';
 });
