@@ -3,6 +3,12 @@ body {
   color: white;
 }
 
+h1,
+h2,
+button {
+  font-family: 'Pacifico', cursive;
+}
+
 .container {
   display: flex;
   flex-direction: row;
@@ -17,12 +23,13 @@ body {
 }
 
 #btn {
+  width: 300px;
   outline: none;
   border: none;
   cursor: pointer;
   display: block;
   position: relative;
-  background-color: #fcad26;
+  background: magenta;
   font-size: 16px;
   font-weight: 300px;
   color: white;
@@ -31,11 +38,11 @@ body {
   padding: 25px 80px;
   margin: 0 auto;
   border-radius: 20px;
-  box-shadow: 0 6px orangered;
+  box-shadow: 0 6px indigo;
 }
 
 #btn:hover {
-  box-shadow: 0 4px orangered;
+  box-shadow: 0 4px indigo;
   top: 2px;
 }
 
