@@ -23,7 +23,7 @@ button {
 }
 
 #btn {
-  width: 300px;
+  width: 100%;
   outline: none;
   border: none;
   cursor: pointer;

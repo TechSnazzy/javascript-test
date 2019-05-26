@@ -1,16 +1,11 @@
 /*
-A function is passed into another function.
-Then after something has happened, that function is invoked.
-For example...
-
-setTimeout(function() {
-  console.log('Callback function!');
-}, 3000);
+1. Start out with an array.
+2. Then create a forEach that takes a callback function.
+3. Type `node app.js` to execute in terminal.
 */
 
-let btn = document.querySelector('#btn');
+const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
-// addEventListener takes a callback function
-btn.addEventListener('click', function(e) {
-  console.log('The button was clicked.');
+days.forEach(function(day, index) {
+  console.log(`starts with ${index + 1} -- ${day}`);
 });
