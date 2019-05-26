@@ -4,8 +4,21 @@
 3. Type `node app.js` to execute in terminal.
 */
 
-const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+const months = [
+  'Jan',
+  'Feb',
+  'Mar',
+  'Apr',
+  'May',
+  'Jun',
+  'Jul',
+  'Aug',
+  'Sep',
+  'Oct',
+  'Nov',
+  'Dec'
+];
 
-days.forEach(function(day, index) {
-  console.log(`starts with ${index + 1} -- ${day}`);
+months.forEach(function(m, index) {
+  console.log(`Month ${index + 1} is ${m}`);
 });
